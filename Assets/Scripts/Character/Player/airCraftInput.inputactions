@@ -1,0 +1,76 @@
+{
+    "name": "airCraftInput",
+    "maps": [
+        {
+            "name": "default",
+            "id": "122e49f9-d551-45cb-adb2-f445873023d8",
+            "actions": [
+                {
+                    "name": "turn",
+                    "type": "Value",
+                    "id": "6276f8b0-ae52-402a-bbe4-5ceb9ed37f8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "thrust",
+                    "type": "Button",
+                    "id": "6e6389ae-6bd4-4de3-975f-e9cc5ff7d9e5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "99aa82fe-c179-4c43-8cca-21899f803fb6",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turn",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e4c0fab4-c5b0-453c-ad83-2f4bf578a991",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turn",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "55c3536c-7fc4-4688-a42f-b0327cd82430",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turn",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "40ddf18a-03e1-4d38-b3e6-2837693d9c01",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "thrust",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
